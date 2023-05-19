@@ -1,0 +1,96 @@
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    height: 860px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: orange;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a,
+p,
+label {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: lighter;
+}
+
+label {
+    color: #777777;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+.forgot-password {
+    text-align: right;
+    font-size: 14px;
+}
+
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
+a:hover {
+    /*마우스 인식할때만 언더라인 표시*/
+    color: black;
+    text-decoration: underline;
+}
+
+.login-button {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    border: none;
+    background-color: orange;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.signup-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.signup-button {
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.signup-info {
+    color: #777777;
+}
