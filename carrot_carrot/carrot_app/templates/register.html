@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lnag="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>네이버 : 회원가입</title>
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+
+</head>
+<body>
+
+<div id="header">
+    <a href="login.html">🥕🥕🥕🥕🥕</a>
+</div>
+
+
+<div id="wrapper">
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div id="content">
+
+            <div>
+                <h3 class="join_title">
+                    <label for="id">아이디</label>
+                </h3>
+                <span class="box int_id">
+                        <input type="text" id="id" class="int" maxlength="20" name="id">
+
+                    </span>
+                <span class="error_next_box"></span>
+            </div>
+
+            <!-- PW1 -->
+            <div>
+                <h3 class="join_title"><label for="pswd1">비밀번호</label></h3>
+                <span class="box int_pass">
+                        <input type="text" id="pswd1" class="int" maxlength="20" name="pswd1">
+                        <span id="alertTxt">사용불가</span>
+                        
+                    </span>
+                <span class="error_next_box"></span>
+            </div>
+
+            <!-- PW2 -->
+            <div>
+                <h3 class="join_title"><label for="pswd2">비밀번호 재확인</label></h3>
+                <span class="box int_pass_check">
+                        <input type="text" id="pswd2" class="int" maxlength="20" name="pswd2">
+                        
+                    </span>
+                <span class="error_next_box"></span>
+            </div>
+
+            <!-- NAME -->
+            <div>
+                <h3 class="join_title"><label for="name">이름</label></h3>
+                <span class="box int_name">
+                        <input type="text" id="name" class="int" maxlength="20" name="name">
+                    </span>
+                <span class="error_next_box"></span>
+            </div>
+
+
+            <!-- EMAIL -->
+            <div>
+                <h3 class="join_title"><label for="email">본인확인 이메일<span class="optional">(선택)</span></label></h3>
+                <span class="box int_email">
+                        <input type="text" id="email" class="int" maxlength="100" placeholder="선택입력" name="email">
+                    </span>
+                <span class="error_next_box">이메일 주소를 다시 확인해주세요.</span>
+            </div>
+
+            <!-- MOBILE -->
+            <div>
+                <h3 class="join_title"><label for="phoneNum">휴대전화</label></h3>
+                <span class="box int_mobile">
+                        <input type="tel" id="mobile" class="int" maxlength="16" placeholder="전화번호 입력" name="phone">
+                    </span>
+                <span class="error_next_box"></span>
+            </div>
+
+            <!-- JOIN BTN-->
+            <div class="btn_area">
+                <button type="submit" id="btnJoin">
+                   <span> 가입하기</span>
+                </button>
+            </div>
+
+
+        </div>
+
+    </form>
+</div>
+
+
+</body>
+</html>
