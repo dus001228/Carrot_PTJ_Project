@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen {
+    border: 3px solid black;
+    height: 880px;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header {
+
+    width: 400px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-family: fantasy;
+    background-color: #f6e0b5;
+
+
+}
+
+.title {
+    margin: 0 auto;
+    font-size: 35px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+main {
+    width: 400px;
+    height: 730px;
+    background-color: #faf7f2;
+    max-height: 730px;
+    overflow-y: scroll;
+}
+.menutop{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+div.bottom-bar {
+    width: 400px;
+    height: 75px;
+    background-color: #f6e0b5;
+}
+.content{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 50px;
+    height: 21px;
+    border: 1px solid orange;
+    border-radius: 10px;
+}
+
+.searchbar {
+
+    margin-left: 315px;
+}
+
+.bottom-bar {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
